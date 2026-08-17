@@ -1,37 +1,24 @@
 package itsallaboutarray;
 
-
-import java.util.Scanner;
-import java.util.Arrays;
 public class array {
-	public  static void reverse(int[]arr) {
-		  int left = 0;
-		  int right = arr.length-1;
-		  while(left<right) {
-			  int temp=arr[left];
-			 arr[left]=arr[right];
-			 arr[ right]= temp;
-			 left++;
-			 right--;
-		  }
-		
+   public static void main(String[] args) {
+	int []num= new int[100];
+	int total=0;
+	int avg;
+	int difference;
+	for(int i=0;i<num.length;i++) {
+		num[i]=1+(int)Math.round((99.0*Math.random()));
+		total+=num[i];
 		
 	}
-	
-	
-   public static void main(String[] args) {
-    Scanner scanner = new Scanner(System.in);
-    int nums=scanner.nextInt();
-    int[] arry = new int [nums];
-    
-     for(int i=0;i<nums;i++) {
-    	arry[i]=scanner.nextInt();
-     }
-       
-           System.out.println("original array  : "+Arrays.toString(arry));
-          reverse(arry);
-           System.out.println("Reversed array : "+Arrays.toString(arry));
-     scanner.close();
+	System.out.println("Total sum of random numbers: "+total);
+	avg=total/num.length;
+	System.out.println("Index number of diffrence");
+	for(int i=0;i<num.length;i++) {
+		difference=num[i]-avg;
+		System.out.println("   "+i+"  "+num[i]+"  "+difference+"\n");
+	} 
+	System.out.println("Average "+"\n"+"is: "+avg);
 }   
    
 }
