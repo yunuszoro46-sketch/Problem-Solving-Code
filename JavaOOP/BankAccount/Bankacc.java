@@ -1,6 +1,6 @@
 package PKG1;
 
-public class BankAcc{
+class BankAcc{
         public String name,id;
         public double balance;        
 public BankAcc(String name,String id,double balance) {
@@ -13,7 +13,7 @@ public BankAcc(String name,String id,double balance) {
 public void withdraw(double withdraw_amount) {
 	  if(this.balance>withdraw_amount) {
 		  this.balance-=withdraw_amount;
-        		  
+	        	  
 	  }else {
 		  System.out.println("Insuficiant balance");
 	  }
