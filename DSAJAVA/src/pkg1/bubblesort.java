@@ -1,7 +1,7 @@
 package pkg1;
 import java.util.Scanner;
 
-public class bubblesort{
+ class bubblesort{
 	 public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter array size: ");
