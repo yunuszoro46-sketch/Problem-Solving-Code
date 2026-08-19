@@ -2,7 +2,7 @@ package pkg1;
 
 import java.util.Scanner;
 
-public class Task5LCM {
+public class lcm {
 	public static long gcd(long a, long b) {
         while (b != 0) {
             long temp = b;
