@@ -2,7 +2,7 @@ package pkg1;
 
 import java.util.Scanner;
 
-public class TASK9 {
+public class factorial{
 
     
     public static long factorial(int n) {
