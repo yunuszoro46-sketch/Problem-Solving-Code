@@ -1,6 +1,6 @@
 package pk1;
 import java.util.Scanner;
-public class task4 {
+public class  DayofWeek{
    public static void main(String[] args) {
 	   Scanner scanner=new Scanner(System.in);
 	   int a =scanner.nextInt();
